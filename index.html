@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/af50a8c7f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+
+            <i class="fa-solid fa-cloud-sun fa-2xl"></i>
+            <h1>WeatherNow</h1>
+        </div>
+
+    </header>
+    <form>
+        <input type="text" id="location-input" placeholder="Enter location">
+        <button type="submit" id="submit-button">Get Weather <i class="fa-solid fa-cloud-sun"></i></button>
+    </form>
+
+    <div class="weather-info">
+        <div class="spinner"></div>
+        <div class="location"></div>
+        <div class="time"></div>
+        <div class="temperature"></div>
+        <div class="description"></div>
+        <div class="weather-icon"></div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+    </div>
+
+    <div class="footer">
+        <p> Built by Sfy.</p>
+        <a href="https://github.com/Sfyy" class="github-icon"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
