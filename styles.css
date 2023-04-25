@@ -5,6 +5,8 @@
 }
 
 body {
+    position: relative;
+    min-height: 100vh;
     background-color: #f0f0f0;
     font-family: 'Montserrat', sans-serif;
     background-image: url("background.jpg");
@@ -72,7 +74,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     color: #f8fafc;
     background-color: rgba(0, 0, 0, 0.5);
     max-width: 100%;
@@ -178,30 +180,140 @@ button {
 }
 
 
-@media only screen and (max-width: 354px) {
+/* Small devices (portrait tablets and large phones) */
+@media only screen and (max-width: 767px) {
+    .head {
+        margin-top: 30px;
+    }
 
     h1 {
+        font-size: 25px;
+    }
+
+    header {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .weather-info {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .location {
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .temperature {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .wind,
+    .humidity {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 48px;
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer a {
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 486px) {
-
-    h1 {
-        font-size: 40px;
+/* Medium devices (landscape tablets and medium-sized laptops) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        font-size: 24px;
+        padding: 20px;
     }
-}
 
-@media only screen and (max-width: 400px) {
-
-    h1 {
-        font-size: 40px;
+    form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-}
 
-@media only screen and (max-width: 322px) {
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
 
-    h1 {
-        font-size: 30px;
+    button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .weather-info {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .location {
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .temperature {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .wind,
+    .humidity {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 48px;
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer a {
+        font-size: 20px;
     }
 }
